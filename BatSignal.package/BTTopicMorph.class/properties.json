@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BTAbstractPanelMorph",
+	"category" : "BatSignal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"compiledMethods"
+	],
+	"name" : "BTTopicMorph",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+initialization
+getText
+	^ text

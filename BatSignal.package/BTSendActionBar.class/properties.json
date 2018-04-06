@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PanelMorph",
+	"category" : "BatSignal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"compiledMethods"
+	],
+	"name" : "BTSendActionBar",
+	"type" : "normal"
+}

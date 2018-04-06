@@ -1,0 +1,3 @@
+initialization
+topicsMorph
+	^ BTTopicMorph new

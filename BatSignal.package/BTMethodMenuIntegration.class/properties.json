@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BTAbstractPanelMorph",
+	"category" : "BatSignal-Integration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTMethodMenuIntegration",
+	"type" : "normal"
+}

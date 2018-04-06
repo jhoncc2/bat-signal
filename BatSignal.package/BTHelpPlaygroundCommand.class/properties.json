@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSharePlaygroundCommand",
+	"category" : "BatSignal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTHelpPlaygroundCommand",
+	"type" : "normal"
+}

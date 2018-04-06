@@ -1,0 +1,15 @@
+initialization
+createTextMorphFromModel
+	| morph |
+	morph := textModel newScrolledText
+		beWrapped;
+		beForPlainText;
+		takeKeyboardFocus;
+		minHeight: self theme listFont pixelSize * 3;
+		hResizing: #spaceFill; 
+		vResizing: #spaceFill;
+		withGhostText: 'Write a question or comment...';
+		withRulerNamed: #dstextlenght;
+		autoAccept: true;
+		yourself.
+	^ morph
