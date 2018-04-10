@@ -7,5 +7,7 @@ runCoverageOnMethods
 	self naiveStrategyByUserName.
 	self discordExpertise: self class knownExpertise.
 	self expertiseCalculator: self class expertiseCalculator.
+	self sanitizeDiscordExpertise.
+	
 	self calculateCoverageOnMethods.
 	self inspect
