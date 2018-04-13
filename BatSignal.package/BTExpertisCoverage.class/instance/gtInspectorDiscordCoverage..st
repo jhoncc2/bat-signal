@@ -6,4 +6,4 @@ gtInspectorDiscordCoverage: composite
 				select: [ :e | (e value select: [:el | el contacts isEmptyOrNil not ]) size > 0]
 				thenCollect: [ :e | e ].
 
-	^ self drawTable: composite data: ms.
+	^ self drawTable: composite title: 'Discord Coverage' data: ms.

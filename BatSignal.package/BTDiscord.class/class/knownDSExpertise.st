@@ -1,15 +1,15 @@
 data
 knownDSExpertise
 	^ self dataDSExpertise 
-		select: [ :e | e value isNotNil ]
-		thenCollect: [ :e | 
+		"select: [ :e | e value isNotNil ]"
+		collect: [ :e | 
 			|v|
-			"e value ifNotNil: ["
+			e value ifNotNil: [
 				v := ('#' split: e value).
 				self new name: e key;
 					username: v first;
 					id: v second.
-			"] ifNil: [
+			] ifNil: [
 				self new name: e key.
-			]"
+			]
 			]

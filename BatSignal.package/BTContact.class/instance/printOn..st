@@ -1,3 +1,5 @@
 accessing
 printOn: aStream
-	aStream nextPutAll: self username , ' (' ,  (self class name) , ')'
+	aStream nextPutAll: 
+		(self username ifNil: [ self name ])
+			, ' (' ,  (self class name) , ')'
