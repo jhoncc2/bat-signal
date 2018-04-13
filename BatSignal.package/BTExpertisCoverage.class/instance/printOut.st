@@ -2,19 +2,21 @@ printing
 printOut
 	Transcript 
 		show: 'Smalltalk allClassesAndTraits :' , (Smalltalk allClassesAndTraits size) asString ; cr;
-		show: 'Smalltalk allMethods :' , (Smalltalk allMethods size) asString ; 
+		show: 'CompiledMethod allInstances :' , (CompiledMethod allInstances size) asString ; 
 		cr; cr;
 		
 		show: 'Expertise Calculator'; cr;
-		show: 'ExpertiseCalculator classes (instances and their classes) :' , (expertiseCalculator classes size) asString ; 
+		show: 'ExpertiseCalculator classes (instances and their classes) :' , (calculatedClasses size) asString; 
 		cr;
-		show: 'ExpertiseCalculator methods :' , (expertiseCalculator methods size) asString ; 
+		show: 'ExpertiseCalculator methods :' , 
+			(calculatedMethods select: [:e | (e select: #isElegible) size > 1 ]) size asString; 
 		cr; cr;
 		
 		show: 'Discord Expertise Coverage'; cr;
 		show: 'Coverage on Classes ' , 
-			((coveredClasses select: [ :e | e value isNotEmpty ]) size / expertiseCalculator classes size) asFloat asString; cr;
+			((calculatedClasses select: [ :e | (e select: #hasContacts) size > 0]) size / calculatedClasses size) asFloat asString;
+		cr;
 	
 		show: 'Coverage on Methods ' , 
-			((coveredMethods select: [ :e | e value isNotEmpty ]) size / expertiseCalculator methods size) asFloat asString;
+			((calculatedMethods select: [ :e | (e select: #hasContacts) size > 0]) size / calculatedMethods size) asFloat asString;
 		cr.

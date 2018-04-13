@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BTContact",
+	"category" : "BatSignal-ExpertiseCoverage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id"
+	],
+	"name" : "BTDiscord",
+	"type" : "normal"
+}

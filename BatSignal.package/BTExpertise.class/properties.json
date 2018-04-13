@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BatSignal-ExpertiseCoverage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"date",
+		"commitName",
+		"contacts"
+	],
+	"name" : "BTExpertise",
+	"type" : "normal"
+}

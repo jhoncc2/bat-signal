@@ -1,6 +1,6 @@
 matching-strategies
 naiveStrategyByUserName
 	<return: #Boolean>
-	matchingStrategy := [ :a :b | "b an array: {Name. UserName. discordId}"
-		a = b second
+	matchingStrategy := [ :expertise :contact | "b an array: {Name. UserName. discordId}"
+		expertise commitName = contact username
 	]

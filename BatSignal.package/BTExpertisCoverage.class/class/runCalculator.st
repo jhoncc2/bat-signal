@@ -1,5 +1,5 @@
 data
 runCalculator
 	<script: 'self runCalculator'>
-	^ calculatorInstance :=  ExpertiseCalculator new
+	^ calculatorInstance :=  ExpertiseRanking new
 		build.

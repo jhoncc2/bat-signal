@@ -1,9 +1,10 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "BatSignal-Utils",
+	"category" : "BatSignal-ExpertiseCoverage",
 	"classinstvars" : [
-		"calculatorInstance"
+		"calculatorInstance",
+		"instance"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -12,7 +13,10 @@
 		"expertiseCalculator",
 		"coveredClasses",
 		"coveredMethods",
-		"matchingStrategy"
+		"matchingStrategy",
+		"calculatedMethods",
+		"calculatedClasses",
+		"expertiseColl"
 	],
 	"name" : "BTExpertisCoverage",
 	"type" : "normal"
