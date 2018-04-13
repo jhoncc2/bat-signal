@@ -1,7 +1,6 @@
 baselines
 baseline: spec
 	<baseline>
-	spec
-		for: #common
-		do: [ spec package: 'BatSignal'.
-			spec group: 'default' with: #('BatSignal') ]
+	self externalProjects: spec.
+	self corePackages: spec.
+	self groups: spec.
