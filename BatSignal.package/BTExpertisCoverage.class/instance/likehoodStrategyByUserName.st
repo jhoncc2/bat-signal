@@ -6,7 +6,9 @@ likehoodStrategyByUserName
 	compareBlock := [:a :b | (((a alike: b) / (a size + b size)) > 0.4)].
 	matchingStrategy := [ :expertise :contact | "b an array: {Name. UserName. discordId}"
 		|uName name|
-		uName := contact username select: [ :c | (c = Character space) not].
+		
+		uName := (contact username ifNil: ['']) 
+				select: [ :c | (c = Character space) not]. "Select non binded users"
 		name := contact name select: [ :c | (c = Character space) not].
 		
 		(compareBlock value: expertise commitName value: uName) 

@@ -9,7 +9,8 @@
 		"name",
 		"date",
 		"commitName",
-		"contacts"
+		"contacts",
+		"methods"
 	],
 	"name" : "BTExpertise",
 	"type" : "normal"

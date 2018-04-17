@@ -5,7 +5,7 @@ drawTable: composite title: title data: ms
 		display: [ ms ];
 		when: [ ms notEmpty ];
 		column: 'Method' 
-			evaluated: [ :m | m key ]
+			evaluated: [ :m | m key name ]
 			width: 200
 			tags: { }
 			sortedBy: [ :a :b | a timestamp > b timestamp ];
