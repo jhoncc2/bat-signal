@@ -12,5 +12,6 @@ getOrCreateExpertise: exp method: meth
 		expertiseColl add: expertise.
 	] ifFalse: [
 		expertise := expertiseColl at: ind.
+		expertise addMethod: meth
 	].
 	^ expertise
