@@ -16,7 +16,8 @@
 		"matchingStrategy",
 		"calculatedMethods",
 		"calculatedClasses",
-		"expertiseColl"
+		"expertiseColl",
+		"calculatedPackages"
 	],
 	"name" : "BTExpertisCoverage",
 	"type" : "normal"

@@ -1,0 +1,3 @@
+initialization
+sendMessage
+	self subclassResponsibility

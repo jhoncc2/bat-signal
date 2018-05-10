@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "BTAbstractPanelMorph",
-	"category" : "BatSignal",
+	"super" : "Object",
+	"category" : "BatSignal-ExpertiseCoverage",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"compiledMethods"
+		"methods",
+		"classes"
 	],
-	"name" : "BTHelpDialog",
+	"name" : "BTExpertiseProvider",
 	"type" : "normal"
 }

@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "BTAbstractPanelMorph",
+	"super" : "BTAbstractSender",
 	"category" : "BatSignal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"compiledMethods"
+		"items"
 	],
-	"name" : "BTHelpDialog",
+	"name" : "BTClientSender",
 	"type" : "normal"
 }

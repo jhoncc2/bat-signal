@@ -1,8 +1,8 @@
 data
 knownDSExpertise
 	^ self dataDSExpertise 
-		"select: [ :e | e value isNotNil ]"
-		collect: [ :e | 
+		select: [ :e | e value isNotNil ]
+		thenCollect: [ :e | 
 			|v|
 			e value ifNotNil: [
 				v := ('#' split: e value).

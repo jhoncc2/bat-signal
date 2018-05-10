@@ -66,7 +66,7 @@ dataDSExpertise
 ('Nicolas Papagna Maldonado' ->nil).
 ('Nick Papoylias' ->nil).
 ('Nicolas Passerini' ->nil).
-('Alain Plantec' ->nil).
+('Alain Plantec' ->'Alain Plantec#0803').
 ('Guillermo Polito' -> 'Guille#6069').
 ('Damien Pollet' -> 'Damien Pollet#3585').
 ('Sergi Reyner' ->nil).
@@ -91,4 +91,10 @@ dataDSExpertise
 ('Fernando Olivero' ->nil).
 ('Gisela Decuzzi' ->nil).
 ('Erwan Douaille' ->nil).
-('Simon Allie' ->nil)}
+('Simon Allie' ->nil).
+"Manually known expertise"
+('Milton Mamani' ->'akevalion#9350').
+('Tudor Girba' ->'girba#7603').
+('Jhonny Cerezo' ->'jhoncc2#5065').
+('Alain Plantec' ->'Alain Plantec#0803').
+}

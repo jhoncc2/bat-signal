@@ -1,0 +1,3 @@
+accessing
+targetMethod
+	^ compiledMethods first.

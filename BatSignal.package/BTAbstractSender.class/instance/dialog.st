@@ -1,0 +1,3 @@
+initialization
+dialog
+	^ dialog

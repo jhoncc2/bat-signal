@@ -1,5 +1,8 @@
 action
 sendAction
-	items userTextMessageItem text: self getText.
-	self items send.
-	self close
+	BTAbstractSender defaultClass new
+		dialog: self;
+		targetMethod: self targetMethod;
+		message: self getText;
+		sendMessage.
+	

@@ -5,12 +5,13 @@ runCoverage
 	self new runCoverage
 	"
 	"configuration"
+	self likehoodStrategyByUserName.
 	self discordExpertise: BTContact knownExpertise.
 	self expertiseCalculator: self class expertiseCalculator.
-	self likehoodStrategyByUserName.
-
-	self calculateCoverageOnClasses.
+	
 	self calculateCoverageOnMethods.
+	self calculateCoverageOnClasses.
+	self calculateCoverageOnPackages.
 	
 	self printOut.
 	

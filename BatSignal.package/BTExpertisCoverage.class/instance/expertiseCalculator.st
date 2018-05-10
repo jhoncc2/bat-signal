@@ -1,3 +1,3 @@
 accessing
 expertiseCalculator
-	expertiseCalculator
+	^ expertiseCalculator
