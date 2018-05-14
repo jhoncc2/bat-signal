@@ -1,4 +1,4 @@
-menus
+menu
 openHelpDialog: aCompiledMethod
 	BTHelpDialog new
 		extent: 400@500;

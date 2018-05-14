@@ -1,3 +1,3 @@
 accessing
 getText
-	 ^ self submorphs reduce: [ :a :b | a getText , ' ' , b getText ]
+	 ^ #'[' , targetItem , '] ' , self submorphs second getText 

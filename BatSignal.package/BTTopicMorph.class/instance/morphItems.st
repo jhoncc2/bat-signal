@@ -1,7 +1,9 @@
 building
 morphItems
-	compiledMethods ifNil: [ ^ {} ].
-	^ compiledMethods collect: [ :m | 
-		BTTopicItemMorph new
-		method: m;
+	(expertList isNil or: [ expertList isEmpty ]) ifTrue: [ ^ {
+		(BTEmptyItemMorph new).
+	} ].
+	^ expertList collect: [ :m | 
+		BTExpertItemMorph new
+		expert: m;
 		yourself. ]

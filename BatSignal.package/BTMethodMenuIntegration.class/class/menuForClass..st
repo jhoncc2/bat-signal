@@ -1,7 +1,7 @@
 menus
-menuFor: aBuilder
+menuForClass: aBuilder
 	<contextMenu>
-	<nautilusGlobalMethodMenu>
+	<nautilusGlobalClassMenu>
 	^ self new
 		menuFor: aBuilder
 		yourself

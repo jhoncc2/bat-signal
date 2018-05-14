@@ -7,7 +7,7 @@ getOrCreateExpertise: exp method: meth
 		e commitName = contributor.
 	].
 	ind = 0 ifTrue: [ 
-		expertise := BTExpertise new
+		expertise := BTExpert new
 			commitName: contributor;
 			addMethod: meth;
 			date: exp value.

@@ -1,3 +1,0 @@
-initialization
-method
-	^ method

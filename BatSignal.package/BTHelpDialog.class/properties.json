@@ -6,7 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"compiledMethods"
+		"expertList",
+		"method",
+		"package",
+		"clazz",
+		"targetItem"
 	],
 	"name" : "BTHelpDialog",
 	"type" : "normal"

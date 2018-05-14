@@ -8,7 +8,7 @@
 	"instvars" : [
 		"message",
 		"dialog",
-		"targetMethod"
+		"targetExpert"
 	],
 	"name" : "BTAbstractSender",
 	"type" : "normal"

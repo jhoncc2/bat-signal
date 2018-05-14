@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"method"
+		"expert"
 	],
-	"name" : "BTTopicItemMorph",
+	"name" : "BTExpertItemMorph",
 	"type" : "normal"
 }
