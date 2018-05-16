@@ -4,7 +4,7 @@ sendMessage
 
 	msg := self message.
 	targetExpert isReachable ifTrue: [ 
-		msg := msg , ' ' , targetExpert contacts asArray first discordReference 
+		msg := msg , ' ' , targetExpert discordReference 
 	].
 	
 	DSBot new

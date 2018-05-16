@@ -1,0 +1,3 @@
+accessing
+discordReference
+	^ '<' , #@ , self discordId , '>'

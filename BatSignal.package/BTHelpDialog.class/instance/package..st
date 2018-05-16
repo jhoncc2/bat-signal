@@ -7,7 +7,7 @@ package: aPackageTreeTagSelection
 		package := aPackageTreeTagSelection node parentNode item name , '-' , package].
 	targetItem := package.
 	
-	expertList := BTExpertisCoverage instance expertsForPackage: package.
+	expertList := BTExpertiseProvider instance expertsForPackage: package.
 	self submorphs first expertList: expertList.
 	
 	

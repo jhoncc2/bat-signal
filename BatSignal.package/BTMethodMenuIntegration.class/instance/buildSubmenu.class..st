@@ -6,6 +6,6 @@ buildSubmenu: aBuilder class: clazz
 		action: [ BTHelpDialog new
 			extent: 400@500;
 			class: clazz;
-			openInWindow ];
+			btOpen ];
 		label: #'? Expertise Help';
 		withSeparatorAfter.

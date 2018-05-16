@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BatSignal-Data",
+	"classinstvars" : [
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"experts",
+		"methods",
+		"classes",
+		"packages"
+	],
+	"name" : "BTExpertiseProvider",
+	"type" : "normal"
+}

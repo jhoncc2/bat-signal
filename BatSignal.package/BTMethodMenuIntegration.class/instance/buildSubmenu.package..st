@@ -6,6 +6,6 @@ buildSubmenu: aBuilder package: package
 		action: [ BTHelpDialog new
 			extent: 400@500;
 			package: package;
-			openInWindow ];
+			btOpen ];
 		label: #'? Expertise Help';
 		withSeparatorAfter.

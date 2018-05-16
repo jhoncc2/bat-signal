@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BatSignal-Data",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"discordId",
+		"expertName",
+		"discordUsername",
+		"commitName"
+	],
+	"name" : "BTExpertData",
+	"type" : "normal"
+}

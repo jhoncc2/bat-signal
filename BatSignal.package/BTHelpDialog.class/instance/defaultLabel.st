@@ -1,3 +1,3 @@
 accessing
 defaultLabel
-	^ 'Help!'
+	^ 'Help!!'
