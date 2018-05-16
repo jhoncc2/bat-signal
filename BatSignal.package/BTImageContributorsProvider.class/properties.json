@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BTExpertiseProvider",
+	"super" : "BTContributorProvider",
 	"category" : "BatSignal-ExpertiseCoverage",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BTExpertiseImageProvider",
+	"name" : "BTImageContributorsProvider",
 	"type" : "normal"
 }

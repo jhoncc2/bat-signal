@@ -1,5 +1,5 @@
 data
 runCalculator
 	<script: 'self runCalculator'>
-	^ calculatorInstance := BTExpertiseImageProvider new
+	^ calculatorInstance := BTImageContributorsProvider new
 		imageInformation.

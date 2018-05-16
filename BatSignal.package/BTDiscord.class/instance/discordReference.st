@@ -1,3 +1,3 @@
 accessing
 discordReference
-	^ #@ , username ", '#' , id."
+	^ '<' , #@ , id , '>'

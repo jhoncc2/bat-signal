@@ -1,7 +1,7 @@
 processors
 processCompiledMethod: method
 
-	| author date coll cls mth key |
+	| author date coll cls key |
 	
 	author := method author.
 	self ifEligible: author do: [
@@ -9,8 +9,7 @@ processCompiledMethod: method
 		date := method timeStamp ifNotEmpty: [ :ts | ((ts splitOn: ' ') last: 2) first. ].
 
 		cls := method methodClass name.
-		mth := method selector.
-		key := method.
+		key := method name.
 		"(methods includesKey: key) ifTrue: [self halt.]." "weird case, it musn't happen"
 		coll := methods at: key ifAbsentPut: OrderedCollection new.
 		coll add: author -> date.
