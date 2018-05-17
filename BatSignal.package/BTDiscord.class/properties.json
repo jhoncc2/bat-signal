@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id"
+		"id",
+		"discriminator"
 	],
 	"name" : "BTDiscord",
 	"type" : "normal"

@@ -1,5 +1,6 @@
 import
 loadExperts
+	<script: 'self instance loadExperts'>
 	| reference |
 	reference := self dataDirectory.
 	methods := STON fromStream: (reference / 'methods.json') readStream.
@@ -10,6 +11,7 @@ loadExperts
 	experts := (STON fromStream: (reference / 'expert.json') readStream) collect: [:e |
 					BTExpertData new discordId: (e at: 'discordId');
 						expertName: (e at: 'name');
+						discordDiscriminator: (e at: 'discordDiscriminator');
 						discordUsername: (e at: 'discordUsername');
 						commitName: (e at: 'commitName').
 				].

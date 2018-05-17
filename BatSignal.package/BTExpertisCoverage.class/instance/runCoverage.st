@@ -6,7 +6,7 @@ runCoverage
 	"
 	"configuration"
 	self likehoodStrategyByUserName.
-	self discordExpertise: BTContact knownExpertise.
+	self discordExpertise: (BTContact knownExpertise select: #isElegible).
 	self expertiseCalculator: self class expertiseCalculator.
 	
 	self calculateCoverageOnMethods.

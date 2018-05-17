@@ -4,12 +4,13 @@ knownDSExpertise
 		select: [ :e | e value isNotNil ]
 		thenCollect: [ :e | 
 			|v|
-			e value ifNotNil: [
-				v := ('#' split: e value).
-				self new name: e key;
+			e second ifNotNil: [
+				v := ('#' split: e second).
+				self new name: e first;
 					username: v first;
-					id: v second.
+					discrimator: v second;
+					id: e third.
 			] ifNil: [
-				self new name: e key.
+				self new name: e first.
 			]
 			]

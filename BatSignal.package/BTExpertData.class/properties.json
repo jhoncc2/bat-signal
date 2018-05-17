@@ -9,7 +9,8 @@
 		"discordId",
 		"expertName",
 		"discordUsername",
-		"commitName"
+		"commitName",
+		"discordDiscriminator"
 	],
 	"name" : "BTExpertData",
 	"type" : "normal"

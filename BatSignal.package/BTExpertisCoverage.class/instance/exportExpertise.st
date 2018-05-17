@@ -1,5 +1,6 @@
 export-import
 exportExpertise
+	<script: 'self instance exportExpertise'>
 	| expertIndexBlock data |
 
 	self persistData: (expertiseColl  collect: [ :e | e toStonFormat. ]) asArray 

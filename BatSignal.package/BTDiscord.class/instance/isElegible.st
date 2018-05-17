@@ -1,3 +1,3 @@
 accessing
 isElegible 
-	^ (id = nil) not
+	^ id notNil or: [ discriminator notNil ]

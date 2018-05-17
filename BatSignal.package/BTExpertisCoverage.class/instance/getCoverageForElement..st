@@ -5,8 +5,8 @@ getCoverageForElement: assoc
 	assoc value do: [ :e | "expertise per Element"
 		e isElegible ifTrue: [
 			expertise do: [ :de |
-				((matchingStrategy value: e commitName value: de username ) 
-					or: [ (matchingStrategy value: e commitName value: de name ) ])
+				((matchingStrategy value: e commitName value: de name ) 
+					or: [ de username notNil and: [(matchingStrategy value: e commitName value: de username )] ])
 				ifTrue: [
 					e addContact: de
 				]
