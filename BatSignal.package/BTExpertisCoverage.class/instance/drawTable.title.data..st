@@ -10,12 +10,12 @@ drawTable: composite title: title data: ms
 			tags: { }
 			sortedBy: [ :a :b | a timestamp > b timestamp ];
 		column: 'Expertise'
-			evaluated: [ :m | (m value select: #isElegible) asArray first ]
+			evaluated: [ :m | (m value keys select: #isElegible) asArray first ]
 			width: 200;
 		column: 'Discrod'
 			evaluated: [ :m | 
 				|c|
-				c := (m value select: #isElegible) asArray first contacts.
+				c := (m value keys select: #isElegible) asArray first contacts.
 				c size > 0 ifTrue: [
 					c asArray first
 				] ifFalse: [

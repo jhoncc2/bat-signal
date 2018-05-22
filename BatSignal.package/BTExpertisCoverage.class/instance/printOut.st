@@ -9,14 +9,14 @@ printOut
 		show: 'ExpertiseCalculator classes (instances and their classes) :' , (calculatedClasses size) asString; 
 		cr;
 		show: 'ExpertiseCalculator methods :' , 
-			(calculatedMethods select: [:e | (e select: #isElegible) size > 1 ]) size asString; 
+			(calculatedMethods select: [:e | (e keys select: #isElegible) size > 1 ]) size asString; 
 		cr; cr;
 		
 		show: 'Discord Expertise Coverage'; cr;
 		show: 'Coverage on Classes ' , 
-			((calculatedClasses select: [ :e | (e select: #hasContacts) size > 0]) size / calculatedClasses size) asFloat asString;
+			((calculatedClasses select: [ :e | (e keys  select: #hasContacts) size > 0]) size / calculatedClasses size) asFloat asString;
 		cr;
 	
 		show: 'Coverage on Methods ' , 
-			((calculatedMethods select: [ :e | (e select: #hasContacts) size > 0]) size / calculatedMethods size) asFloat asString;
+			((calculatedMethods select: [ :e | (e keys  select: #hasContacts) size > 0]) size / calculatedMethods size) asFloat asString;
 		cr.

@@ -2,7 +2,9 @@ actions
 getCoverageForElement: assoc
 	| expertise | 
 	expertise := discordExpertise "select: #isElegible".
-	assoc value do: [ :e | "expertise per Element"
+	assoc value associations do: [ :ae | "expertise per Element"
+		|e|
+		e := ae key.
 		e isElegible ifTrue: [
 			expertise do: [ :de |
 				((matchingStrategy value: e commitName value: de name ) 

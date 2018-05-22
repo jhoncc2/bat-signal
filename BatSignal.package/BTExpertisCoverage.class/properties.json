@@ -11,8 +11,6 @@
 	"instvars" : [
 		"discordExpertise",
 		"expertiseCalculator",
-		"coveredClasses",
-		"coveredMethods",
 		"matchingStrategy",
 		"calculatedMethods",
 		"calculatedClasses",

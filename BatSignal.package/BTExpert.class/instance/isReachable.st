@@ -1,4 +1,4 @@
 test
 isReachable 
-	^ contacts size > 0
+	^ contacts isNotNil and: [contacts size > 0]
 

@@ -5,13 +5,21 @@ expertiseCalculator: ec
 	calculatedMethods := Dictionary new.
 	calculatedClasses := Dictionary new.
 	expertiseCalculator methods associationsDo: [:e |
-		calculatedMethods at: e key put: (e value collect: [ :el |
-			self getOrCreateExpertise: el method: e key.
-		]) asSet
+		|weights|
+		weights := Dictionary new.
+		calculatedMethods at: e key put: weights.
+		(e value collect: [ :el |
+			weights at: (self getOrCreateExpertise: el method: e key) 
+								   put: self commitVal.
+		]).
 	].
 
 	expertiseCalculator classes associationsDo: [:e |
-		calculatedClasses at: e key put: (e value collect: [ :el |
-			self getOrCreateExpertise: el method: e key.
-		]) asSet
+		|weights|
+		weights := Dictionary new.
+		calculatedClasses at: e key put: weights.
+		(e value collect: [ :el |
+			weights at: (self getOrCreateExpertise: el method: e key) 
+					  put: self commitVal.
+		])
 	].
