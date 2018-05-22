@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BatSignal-ExpertiseCoverage",
+	"classinstvars" : [
+		"calculatorInstance",
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"discordExpertise",
+		"expertiseCalculator",
+		"matchingStrategy",
+		"calculatedMethods",
+		"calculatedClasses",
+		"expertiseColl",
+		"calculatedPackages"
+	],
+	"name" : "BTDiscordCoverage",
+	"type" : "normal"
+}

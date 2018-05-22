@@ -2,21 +2,18 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "BatSignal-ExpertiseCoverage",
-	"classinstvars" : [
-		"calculatorInstance",
-		"instance"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"discordExpertise",
-		"expertiseCalculator",
-		"matchingStrategy",
+		"contributors",
+		"methods",
+		"classes",
+		"packages",
 		"calculatedMethods",
 		"calculatedClasses",
-		"expertiseColl",
 		"calculatedPackages"
 	],
-	"name" : "BTExpertisCoverage",
+	"name" : "BTContributorsPharo",
 	"type" : "normal"
 }

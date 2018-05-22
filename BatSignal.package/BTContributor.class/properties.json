@@ -11,8 +11,10 @@
 		"commitName",
 		"contacts",
 		"methods",
-		"usedMethods"
+		"usedMethods",
+		"classes",
+		"packages"
 	],
-	"name" : "BTExpert",
+	"name" : "BTContributor",
 	"type" : "normal"
 }
