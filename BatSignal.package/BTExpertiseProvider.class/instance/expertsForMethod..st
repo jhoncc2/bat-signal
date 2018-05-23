@@ -3,4 +3,4 @@ expertsForMethod: aCompiledMethod
 	(methods includesKey: aCompiledMethod name) ifFalse: [ 
 		^ {}
 	].
-	^ (methods at: aCompiledMethod name) collect: [ :i | experts at: i ]
+	^ (methods at: aCompiledMethod name) associations collect: [ :i | experts at: i key ]

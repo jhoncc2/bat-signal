@@ -3,4 +3,4 @@ expertsForPackage: packageName
 	(packages includesKey: packageName) ifFalse: [ 
 		^ { }
 	].
-	^ (packages at: packageName) collect: [ :i | experts at: i ]
+	^ (packages at: packageName) associations collect: [ :i | experts at: i ]

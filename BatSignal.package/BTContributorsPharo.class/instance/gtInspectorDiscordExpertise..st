@@ -1,8 +1,8 @@
 gt-inspector-extension
 gtInspectorDiscordExpertise: composite
-	"<gtInspectorPresentationOrder: -2>"
+	<gtInspectorPresentationOrder: -2>
 	| ms |
-	ms := contributors select: #isReachable.
+	ms := (contributors select: #isReachable) values.
 	
 	^ composite fastTable 
 		title: [ 'Discord (' , ms size asString , ')'];
