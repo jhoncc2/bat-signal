@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"expertList"
+		"expertList",
+		"selectedExpert"
 	],
 	"name" : "BTTopicMorph",
 	"type" : "normal"

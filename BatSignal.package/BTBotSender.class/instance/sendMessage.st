@@ -11,5 +11,5 @@ sendMessage
 		token: 'NDI2MDg1ODg4Njk5NzkzNDA4.DdZH4g.j8BjLpEcEtP2LtxEekWjfexE0os';
 		with: [ :bot | bot message
 			content: msg;
-			sendToServer: 'BatSignal-test' channel: 'dumb-messages' ].
+			sendToServer: 'BatSignal-test' channel: 'bot-test-channel' ].
 	"dialog close."
