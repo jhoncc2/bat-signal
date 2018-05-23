@@ -1,6 +1,6 @@
-as yet unclassified
+contributors
 processMethods
 	CompiledMethod allInstances do: [ :e |
 		self inmediateExpertise: e.
-		self usageExpertise: e.
+		"self usageExpertise: e."
 	]

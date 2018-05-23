@@ -1,4 +1,4 @@
-as yet unclassified
+contributors
 processContributors
 	contributors := Dictionary new.
 	methods := Dictionary new.

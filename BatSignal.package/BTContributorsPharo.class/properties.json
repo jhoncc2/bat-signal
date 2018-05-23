@@ -2,17 +2,16 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "BatSignal-ExpertiseCoverage",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"contributors",
 		"methods",
 		"classes",
-		"packages",
-		"calculatedMethods",
-		"calculatedClasses",
-		"calculatedPackages"
+		"packages"
 	],
 	"name" : "BTContributorsPharo",
 	"type" : "normal"

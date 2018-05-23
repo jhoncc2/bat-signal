@@ -1,7 +1,7 @@
 export
 toStonFormat
 	|c|
-	contacts ifNotEmpty: [ c := contacts asArray first. ].
+	c := discordContact.
 	^ Dictionary new 
 		at: 'commitName' put: self commitName;
 		at: 'name' put: (c ifNotNil: [c name]);

@@ -1,3 +1,3 @@
 accessing
 methods 
-	^ methods ifNil: [ methods := Set new ]
+	^ methods ifNil: [ methods := OrderedCollection new ]

@@ -1,4 +1,4 @@
-as yet unclassified
+contributors
 inmediateExpertise: meth
 	| contributor |
 	self ifEligible: meth author do: [

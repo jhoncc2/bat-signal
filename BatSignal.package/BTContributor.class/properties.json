@@ -7,13 +7,12 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"name",
-		"date",
 		"commitName",
-		"contacts",
 		"methods",
 		"usedMethods",
 		"classes",
-		"packages"
+		"packages",
+		"discordContact"
 	],
 	"name" : "BTContributor",
 	"type" : "normal"

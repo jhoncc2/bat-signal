@@ -1,4 +1,4 @@
 test
 hasContacts 
-	^ contacts isEmptyOrNil not
+	^ discordContact isNotNil
 
