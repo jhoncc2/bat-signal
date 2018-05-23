@@ -9,13 +9,8 @@ loadExperts
 	
 	"encapsulate expert data"
 	experts := (STON fromStream: (reference / 'expert.json') readStream) collect: [:e |
-					BTExpertData new discordId: (e at: 'discordId');
-						expertName: (e at: 'name');
-						discordDiscriminator: (e at: 'discordDiscriminator');
-						discordUsername: (e at: 'discordUsername');
-						commitName: (e at: 'commitName').
+					BTExpertData new parseFrom: e.
 				].
-
 
 	self class instance: self. 
 

@@ -11,7 +11,8 @@
 		"experts",
 		"methods",
 		"classes",
-		"packages"
+		"packages",
+		"expertiseSource"
 	],
 	"name" : "BTExpertiseProvider",
 	"type" : "normal"
