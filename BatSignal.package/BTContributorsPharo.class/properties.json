@@ -11,7 +11,8 @@
 		"contributors",
 		"methods",
 		"classes",
-		"packages"
+		"packages",
+		"discordExpertise"
 	],
 	"name" : "BTContributorsPharo",
 	"type" : "normal"

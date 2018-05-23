@@ -3,7 +3,6 @@ inmediateExpertise: meth
 	| contributor |
 	self ifEligible: meth author do: [
 		contributor := self getOrCreateContributor: meth author.
-		classes at: meth methodClass put: meth.
 		contributor addMethod: meth.
 		contributor addClass: meth methodClass.
 		contributor addPackage: meth package.

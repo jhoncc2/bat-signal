@@ -1,12 +1,12 @@
 gt-inspector-extension
-gtInspectorMethods: composite
-	<gtInspectorPresentationOrder: -2>
+gtInspectorClasses: composite
+	<gtInspectorPresentationOrder: -3>
 	|ms|
-	ms := methods associations 
+	ms := classes associations 
 				select: [ :e | (e value keys select: #isReachable) size > 0]
 				thenCollect: [ :e | e ].
 				
 	^ self drawTable: composite 
-			title: 'Coverage Methods' 
-			totalData: methods 
+			title: 'Coverage Classes' 
+			totalData: classes 
 			selectedData: ms
