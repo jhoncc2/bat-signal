@@ -12,4 +12,4 @@ sendMessage
 		with: [ :bot | bot message
 			content: msg;
 			sendToServer: 'BatSignal-test' channel: 'bot-test-channel' ].
-	"dialog close."
+	dialog close.

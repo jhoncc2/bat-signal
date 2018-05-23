@@ -1,3 +1,3 @@
 accessing
 getText
-	 ^ #'[' , targetItem , '] ' , self submorphs second getText 
+	 ^ '`' , targetItem , '` ' , self submorphs second getText 
