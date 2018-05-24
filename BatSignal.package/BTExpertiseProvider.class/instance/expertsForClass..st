@@ -5,7 +5,6 @@ expertsForClass: aClass
 	(classes includesKey: evalClass asByteString) ifFalse: [
 		self processClass: aClass.
 	].
-
 	expertiseSource := 'class'.
 	^ ((classes at: evalClass) associations collect: [ :i | experts at: i key ])
 			ifEmpty: [
