@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BTExpertiseProvider",
+	"category" : "BatSignal-Data",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTExpertiseLiveTest",
+	"type" : "normal"
+}
