@@ -1,19 +1,15 @@
 public-api
 expertsForClass: aClass 
-	|evalClass|
-	evalClass := aClass.
-	(classes includesKey: evalClass asByteString) ifFalse: [
-		self processClass: aClass.
-	].
+	|secondClass|
+	(aClass endsWith: 'class') 
+		ifTrue: [secondClass := aClass copyUpTo: Character space]
+		ifFalse: [secondClass := aClass , ' class' ].
+
+	(classes includesKey: aClass asByteString) 
+		ifFalse: [ self processClass: aClass.	].
+	(classes includesKey: secondClass asByteString) 
+		ifFalse: [ self processClass: secondClass.	].
+
 	expertiseSource := 'class'.
-	^ ((classes at: evalClass) associations collect: [ :i | experts at: i key ])
-			ifEmpty: [
-				"find on class side or instance side"
-				(aClass endsWith: 'class') 
-					ifTrue: [evalClass := aClass copyUpTo: Character space]
-					ifFalse: [evalClass := aClass , ' class' ].
-					((classes at: evalClass) associations collect: [ :i | experts at: i key ])
-						ifEmpty: [
-							self expertsForPackage: (Smalltalk classNamed: aClass) package name.
-						]
-			]
+
+	^ ((classes at: aClass) associations collect: [ :i | experts at: i key ]) asSet

@@ -1,4 +1,4 @@
-public-api
+processing
 processPackage: packageName
 	
 	| clss dict |

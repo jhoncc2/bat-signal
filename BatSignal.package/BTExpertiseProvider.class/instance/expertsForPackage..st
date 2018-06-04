@@ -4,4 +4,4 @@ expertsForPackage: packageName
 		self processPackage: packageName
 	].
 	expertiseSource := 'package'.
-	^ (packages at: packageName) associations collect: [ :i | experts at: i key ]
+	^ ((packages at: packageName) associations collect: [ :i | experts at: i key ]) asSet
