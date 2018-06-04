@@ -1,5 +1,10 @@
 public-api
-expertsForPackage: packageName
+expertsForPackage: aRPackage
+	| packageName |
+	aRPackage class = RPackage 
+		ifTrue: [ packageName := aRPackage name ]
+		ifFalse: [ packageName := aRPackage ].
+		
 	(packages includesKey: packageName) ifFalse: [ 
 		self processPackage: packageName
 	].

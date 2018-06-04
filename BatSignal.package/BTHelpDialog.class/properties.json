@@ -10,7 +10,8 @@
 		"method",
 		"package",
 		"clazz",
-		"targetItem"
+		"targetItem",
+		"experts"
 	],
 	"name" : "BTHelpDialog",
 	"type" : "normal"

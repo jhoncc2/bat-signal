@@ -7,7 +7,9 @@ package: aPackageTreeTagSelection
 		package := aPackageTreeTagSelection node parentNode item name , '-' , package].
 	targetItem := package.
 	
-	expertList := BTExpertiseProvider instance expertsForPackage: package.
-	self submorphs first expertList: expertList asOrderedCollection.
+	self classifyExpertOnMethods: {}
+		classes:{}
+		packages: (BTExpertiseProvider instance expertsForPackage: package).
+	self submorphs first expertList: experts.
 	
 	

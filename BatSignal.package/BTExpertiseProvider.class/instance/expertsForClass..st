@@ -1,15 +1,15 @@
 public-api
 expertsForClass: aClass 
 	|secondClass|
-	(aClass endsWith: 'class') 
-		ifTrue: [secondClass := aClass copyUpTo: Character space]
-		ifFalse: [secondClass := aClass , ' class' ].
+	(aClass name endsWith: 'class') 
+		ifTrue: [secondClass := aClass name copyUpTo: Character space]
+		ifFalse: [secondClass := aClass name , ' class' ].
 
-	(classes includesKey: aClass asByteString) 
-		ifFalse: [ self processClass: aClass.	].
+	(classes includesKey: aClass name asByteString) 
+		ifFalse: [ self processClass: aClass name.	].
 	(classes includesKey: secondClass asByteString) 
 		ifFalse: [ self processClass: secondClass.	].
 
 	expertiseSource := 'class'.
 
-	^ ((classes at: aClass) associations collect: [ :i | experts at: i key ]) asSet
+	^ ((classes at: aClass name) associations collect: [ :i | experts at: i key ]) asSet

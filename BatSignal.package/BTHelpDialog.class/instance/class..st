@@ -2,7 +2,9 @@ accessing
 class: aClazz 
 	clazz := aClazz.
 	targetItem := aClazz name.
-	expertList := BTExpertiseProvider instance expertsForClass: targetItem.
-	self submorphs first expertList: expertList asOrderedCollection.
+	self classifyExpertOnMethods: Set empty
+		classes:  (BTExpertiseProvider instance expertsForClass: aClazz)
+		packages: (BTExpertiseProvider instance expertsForPackage: aClazz package).
+	self submorphs first expertList: experts.
 	
 	
