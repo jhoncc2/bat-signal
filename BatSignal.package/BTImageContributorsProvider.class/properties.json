@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BTContributorProvider",
-	"category" : "BatSignal-ExpertiseCoverage",
+	"category" : "BatSignal-Deprecated",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
