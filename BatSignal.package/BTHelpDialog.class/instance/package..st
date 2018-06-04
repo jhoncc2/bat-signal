@@ -8,6 +8,6 @@ package: aPackageTreeTagSelection
 	targetItem := package.
 	
 	expertList := BTExpertiseProvider instance expertsForPackage: package.
-	self submorphs first expertList: expertList asSet.
+	self submorphs first expertList: expertList asOrderedCollection.
 	
 	
