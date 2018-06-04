@@ -1,3 +1,3 @@
 action
 targetExpert
-	^ self submorphs first targetExpert
+	^ self submorphs first targetExpert key
