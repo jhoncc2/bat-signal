@@ -6,8 +6,9 @@ usageExpertise: method
 		method messages do: [ :e |
 			imp := e implementors.
 			imp size = 1 ifTrue: [
-				contr addMethod: imp
+				contr addMethod: imp first compiledMethod.
+				contr addClass: imp first compiledMethod methodClass.
+				contr addPackage: imp first compiledMethod package.
 			]
 		]
 	]
-	
