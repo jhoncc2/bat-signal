@@ -3,5 +3,5 @@ menuForMethod: aBuilder
 	<contextMenu>
 	<nautilusGlobalMethodMenu>
 	^ self new
-		menuFor: aBuilder
+		menuFor: aBuilder target: #method
 		yourself

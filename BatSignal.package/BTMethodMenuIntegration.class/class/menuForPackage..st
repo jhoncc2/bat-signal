@@ -3,5 +3,5 @@ menuForPackage: aBuilder
 	<contextMenu>
 	<nautilusGlobalPackageMenu>
 	^ self new
-		menuFor: aBuilder
+		menuFor: aBuilder target: #package
 		yourself

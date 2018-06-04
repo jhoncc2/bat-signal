@@ -1,11 +1,12 @@
 building
 buildSubmenu: aBuilder package: package
 	|lastItem|
-	(lastItem := aBuilder item: #rtn)
-		order: 111;
+	(lastItem := aBuilder item: #'Expertise help')
+		order: self menuOrder;
 		action: [ BTHelpDialog new
 			extent: 400@500;
 			package: package;
 			btOpen ];
-		label: #'? Expertise Help';
+		iconName: self iconName;
+		label: self menuLabel;
 		withSeparatorAfter.

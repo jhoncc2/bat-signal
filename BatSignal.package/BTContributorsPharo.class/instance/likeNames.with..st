@@ -1,4 +1,4 @@
-discord
+utils
 likeNames: c with: d
 	|a b|
 	a := c reject: [ :ch | ch = Character space].

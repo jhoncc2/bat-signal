@@ -3,5 +3,5 @@ menuForClass: aBuilder
 	<contextMenu>
 	<nautilusGlobalClassMenu>
 	^ self new
-		menuFor: aBuilder
+		menuFor: aBuilder target: #class
 		yourself
