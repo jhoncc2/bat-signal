@@ -1,13 +1,23 @@
 export
-exportExpertise
-	<script: 'self instance exportExpertise'>
+exportReachableExpertise
+	<script: 'self instance exportReachableExpertise'>
 	| expertIndexBlock data experts |
 
-	experts := contributors. "values select: #isReachable."
+	experts := discordExpertise select: #isLinked.
 	self persistData: (experts collect: [ :e | e toStonFormat. ]) asArray 
 		  onFile: 'expert.json'.
 
-	expertIndexBlock := [ :expertDict | ((expertDict associations collect: [ :e | (experts indexOf: e key) -> e value ]) reject: [ :e | e key = 0 ]) asDictionary ].
+	expertIndexBlock := [ :expertDict |
+		|dict|
+		dict := Dictionary new.
+		((expertDict associations select: [:e | e key isReachable]) do: [ :e | 
+			|ind|
+			ind := (experts indexOf: e key discordContact).
+			(dict includesKey: ind) 
+				ifTrue: [ dict at: ind put: (dict at: ind) + e value]
+				ifFalse: [ dict at: ind put: e value ] ]) . 
+		dict.
+	].
 	
 	"persist methods"
 	data := methods associations 
