@@ -1,0 +1,1 @@
+A BTMessageProcessorTest is a test class for testing the behavior of BTMessageProcessor

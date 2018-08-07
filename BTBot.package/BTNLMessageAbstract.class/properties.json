@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BTMessageAbstract",
+	"category" : "BTBot-Message",
+	"classinstvars" : [
+		"defaultProcessor"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTNLMessageAbstract",
+	"type" : "normal"
+}

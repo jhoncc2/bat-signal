@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BTBot-Message",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"codeElement"
+	],
+	"name" : "BTQueryDescriptor",
+	"type" : "normal"
+}
