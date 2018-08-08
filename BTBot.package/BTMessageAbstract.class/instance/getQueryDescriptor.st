@@ -1,0 +1,3 @@
+accessing
+getQueryDescriptor
+	^ self shouldBeImplemented
