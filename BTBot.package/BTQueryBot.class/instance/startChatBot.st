@@ -1,5 +1,6 @@
-as yet unclassified
+starting
 startChatBot
+	
 	bot := DSBot new.
 	bot token: self token.
 	bot connect.
@@ -8,8 +9,8 @@ startChatBot
 	bot announcer 
 		when: DSGatewayMessageAnnouncement
 		do: [ :ann | | response |
-			ann message content 
-			ifNotEmpty: [ 
+			(ann message content isNil or: [ann message content isEmpty]) ifFalse: [ 
+				Transcript show: ann message content , String cr.
 				response := BTMessageProcessor instance processMessage: ann message content.
 				response ifEmpty: [ 
 					bot message

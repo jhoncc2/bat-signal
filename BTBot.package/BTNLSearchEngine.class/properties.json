@@ -1,16 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "BTNLMessageAbstract",
 	"category" : "BTBot-Message",
-	"classinstvars" : [
-		"instance"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"message",
-		"messageProcessor"
+		"searchQuestion"
 	],
-	"name" : "BTMessageProcessor",
+	"name" : "BTNLSearchEngine",
 	"type" : "normal"
 }

@@ -1,10 +1,10 @@
 accessing
 getMessageProcessor: msg
-	^ (msg beginsWith: BTMessageCommand commandPrefix) 
+	^ messageProcessor := (msg beginsWith: BTMessageCommand commandPrefix) 
 			ifTrue: [ BTMessageCommand instance
 								message: msg;
 								yourself ]
-			ifFalse: [ BTNLMessageAbstract defaultProcessor instance
+			ifFalse: [ BTNLSearchEngine instance
 								message: msg;
 								yourself ].
 	
