@@ -1,3 +1,3 @@
-processing
+accessing
 delimiterPrefix
 	^ self elementDelimiterTags first

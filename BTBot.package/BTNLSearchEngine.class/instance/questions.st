@@ -1,4 +1,4 @@
-accessing
+data
 questions 
 	^ { (#all -> 'who is expert in ? ').
 		(#method -> 'who is expert in method ? ') .

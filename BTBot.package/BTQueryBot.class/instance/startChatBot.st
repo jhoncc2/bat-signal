@@ -23,7 +23,7 @@ startChatBot
 							(response collect: [:e | 
 								e expertName , 
 								e discordReference ,
-								String cr ]) asArray joinUsing: ' - ');
+								String cr ]) asArray joinUsing: ' ');
 						embedColor: Color gray;
 						respondTo: ann message. ].
 			bot  ] ].
