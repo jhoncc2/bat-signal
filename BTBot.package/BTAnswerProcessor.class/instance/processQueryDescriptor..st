@@ -12,7 +12,6 @@ processQueryDescriptor: queryDescriptor
 					queryDescriptor codeElement , 
 					String cr , 
 					(self formatExpertiseList:  list ) ]
-			
 		] ifFalse: [
 			answer  := self handleAnswer: queryDescriptor category.].
 	
