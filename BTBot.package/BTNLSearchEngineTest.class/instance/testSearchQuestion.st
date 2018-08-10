@@ -3,14 +3,14 @@ testSearchQuestion
 	| inst |
 	inst := BTNLSearchEngine new.
 	self assert: (inst searchQuestion: 'Who is expert in BatSignal?') 
-		equals: #all.
+		equals: #exp_all.
 	self assert: (inst searchQuestion: 'Who is expert in package SomePackage?') 
-		equals: #package.
+		equals: #exp_package.
 	self assert: (inst searchQuestion: 'Who is expert in class Roassal?') 
-		equals: #class.
+		equals: #exp_class.
 	self assert: (inst searchQuestion: 'Who is expert in method Roassal?') 
-		equals: #method.
+		equals: #exp_method.
 	self assert: (inst searchQuestion: 'information about  Roassal?') 
-		equals: #infoPackage.
+		equals: #inf_package.
 	self assert: (inst searchQuestion: 'information Roassal?') 
-		equals: #infoPackage.
+		equals: #inf_package.

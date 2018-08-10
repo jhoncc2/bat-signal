@@ -1,9 +1,7 @@
 as yet unclassified
-processAnswerUsingQueryDescriptor: queryDescriptor
+findExpertise: queryDescriptor
 	| codeElem expertiseProv list |
-	queryDescriptor
-		ifNil: [ ^ {} ]
-		ifNotNil: [ :desc | codeElem := queryDescriptor codeElement. ].
+	codeElem := queryDescriptor codeElement.
 
 	expertiseProv := BTExpertiseProvider instance.
 	(list := expertiseProv expertsForMethodName: codeElem) 

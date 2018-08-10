@@ -1,13 +1,14 @@
 processing
 searchQuestion: msg 
 	"returns user related question"
-	|factor factors|
+	| factor factors |
 	self message: msg.
 	factor := 0.2.
-	factors := self questions collect: [ :q |
+	factors := BTBotLanguageData questions collect: [ :q |
 			self calculateMatrixLikelyFactor: q value message: msg.
 		].
 	factors max > factor 
-		ifTrue: [ ^ searchQuestion := (self questions at: (factors indexOf: factors max)) key ] "define questions"
-		ifFalse: [ ^ searchQuestion := #all ] "default"
+		ifTrue: [ ^ searchQuestion := (BTBotLanguageData questions 
+							at: (factors indexOf: factors max)) key ] "define questions"
+		ifFalse: [ ^ searchQuestion := #unknown_message ] "default"
 		

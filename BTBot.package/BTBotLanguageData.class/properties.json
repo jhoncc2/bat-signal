@@ -2,13 +2,15 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "BTBot-Message",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"codeElement",
-		"category"
+		"message",
+		"messageProcessor"
 	],
-	"name" : "BTQueryDescriptor",
+	"name" : "BTBotLanguageData",
 	"type" : "normal"
 }

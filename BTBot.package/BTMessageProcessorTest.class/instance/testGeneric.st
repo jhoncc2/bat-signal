@@ -5,6 +5,6 @@ testGeneric
 	self assert: (mp getMessageProcessor: '-- some command ') class 
 		equals: BTMessageCommand.
 		
-	self assert: (mp getMessageProcessor: BTNLPrefixProcessor new prefix , 'BlaBla?') class 
-		equals: BTNLPrefixProcessor 
+	"self assert: (mp getMessageProcessor: BTNLPrefixProcessor new prefix , 'BlaBla?') class 
+		equals: BTNLPrefixProcessor "
 	
