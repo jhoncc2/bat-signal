@@ -9,6 +9,7 @@ questions
 		(#exp_all -> 'who has experience with ').
 		(#exp_all -> 'who has some experience in').
 		(#exp_all -> 'who has used the ').
+		(#exp_all -> 'is ther anybody that can help me with ? ').
 		(#exp_method -> 'who is expert in method ? ') .
 		(#exp_class -> 'who is expert in class ? ') .
 		(#exp_package -> 'who is expert in package ? ') .
