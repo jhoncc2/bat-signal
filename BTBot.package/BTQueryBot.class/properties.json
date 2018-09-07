@@ -3,13 +3,17 @@
 	"super" : "Object",
 	"category" : "BTBot",
 	"classinstvars" : [
-		"instance"
+		"instance",
+		"shouldStop",
+		"process"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"bot",
-		"logFileName"
+		"logFileName",
+		"shouldStop",
+		"process"
 	],
 	"name" : "BTQueryBot",
 	"type" : "normal"
