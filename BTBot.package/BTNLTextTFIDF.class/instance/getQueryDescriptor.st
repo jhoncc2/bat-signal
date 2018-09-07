@@ -4,7 +4,6 @@ getQueryDescriptor
 	
 	| question i |
 	question := self cleanSentenceWords: (' ' split: self message).
-	i := self maxIdfRelevantText: question.
 	
 	^ self buildQueryDescriptor: (self searchQuestion: self message)
-			withTargetElement: (question at: i)
+			withTargetElement: (self maxIdfRelevantText: question)

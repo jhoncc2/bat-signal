@@ -23,4 +23,7 @@ testRankProgramElementInQuestion
 	self assert: r first value equals: 'FileDoesNotExistException'.
 	
 	
-	
+	q := ' ' split: 'experts for Roassal?'.
+	q := (i cleanSentenceWords: q).
+	r := i rankProgramElementInQuestion: q.
+	self assert: r first value equals: 'Roassal'
