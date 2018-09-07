@@ -4,7 +4,7 @@ getMessageProcessor: msg
 			ifTrue: [ BTMessageCommand instance
 								message: msg;
 								yourself ]
-			ifFalse: [ BTNLSearchEngine instance
+			ifFalse: [ BTNLTextTFIDF instance
 								message: msg;
 								yourself ].
 	

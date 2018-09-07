@@ -1,0 +1,3 @@
+configuration
+initializeIDFWithQuestionsFile
+	self executeIDF: self questionsData.

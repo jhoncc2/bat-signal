@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BTMessageAbstract",
-	"category" : "BTBot-Message",
+	"category" : "BTBot-Message-Processor",
 	"classinstvars" : [
 		"defaultProcessor"
 	],

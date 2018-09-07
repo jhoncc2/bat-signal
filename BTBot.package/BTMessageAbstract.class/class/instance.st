@@ -1,3 +1,3 @@
 accessing
 instance
-	^ instance ifNil: [ instance := self new]
+	^ instance ifNil: [ self newInstance ]
