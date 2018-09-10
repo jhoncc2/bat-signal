@@ -1,15 +1,23 @@
 extend
 saveExtendedData
-	| experts expertIndexBlock data methodsData classesData packagesData |
-	methodsData := self openStonData: 'methods.json'.
-	classesData := self openStonData: 'classes.json'.
-	packagesData := self openStonData: 'packages.json'.
+	| experts expertIndexBlock data methodsData classesData packagesData expertsData |
+	expertsData := (self openStonData: 'expert.json').
+	methodsData := (self openStonData: 'methods.json') .
+	classesData := (self openStonData: 'classes.json') .
+	packagesData := (self openStonData: 'packages.json') .
 	
 	experts := contributors values select: #isReachable.
-	self persistData: (experts collect: [ :e | e toStonFormat. ]) asArray 
+	experts  asArray 
+		do: [ :e | (self indexOfDiscordExpert: e inExperts: expertsData) isZero 
+			ifTrue: [ expertsData , {(e toStonFormat)} ] ].
+	
+	self persistData: expertsData
 		  onFile: 'expert.json'.
 
-	expertIndexBlock := [ :expertDict | ((expertDict associations collect: [ :e | (experts indexOf: e key) -> e value ]) reject: [ :e | e key = 0 ]) asDictionary ].
+	expertIndexBlock := [ :expertDict | 
+		((expertDict associations 
+			collect: [ :e | (self indexOfDiscordExpert: e key inExperts: expertsData) -> e value ]) 
+			reject: [ :e | e key = 0 ]) asDictionary ].
 	
 	"persist methods"
 	data := methods associations 
