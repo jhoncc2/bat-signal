@@ -1,3 +1,3 @@
 accessing
 instance 
-	^ instance ifNil: [ instance := self new loadExperts; yourself  ]
+	^ instance ifNil: [ self newInstance  ]
