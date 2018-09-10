@@ -3,6 +3,7 @@ logQuestionMessage: msg
 	| fileRef |
 	fileRef := FileSystem workingDirectory / 
 					('pharo-local/iceberg/jhoncc2/bat-signal/data/log/' , self logFileName).
+	fileRef parent ensureCreateDirectory .
 	fileRef ensureCreateFile.
 	fileRef writeStreamDo: [ :stream | 
 		stream setToEnd.
