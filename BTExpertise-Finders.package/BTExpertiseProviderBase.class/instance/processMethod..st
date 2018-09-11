@@ -1,0 +1,3 @@
+processing
+processMethod: aCompiledMethod
+	self subclassResponsibility

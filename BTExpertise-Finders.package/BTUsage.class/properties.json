@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BTExpertiseProviderBase",
+	"category" : "BTExpertise-Finders",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTUsage",
+	"type" : "normal"
+}
