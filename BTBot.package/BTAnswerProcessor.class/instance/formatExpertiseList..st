@@ -1,6 +1,7 @@
 formatting
 formatExpertiseList: experts
-	experts asArray class = BTDiscord 
+	experts ifEmpty: [ ^ experts ].
+	experts asArray first class = BTDiscord 
 		ifTrue:[^ (experts collect: [:e | 
 								e name , 
 								String space ,
