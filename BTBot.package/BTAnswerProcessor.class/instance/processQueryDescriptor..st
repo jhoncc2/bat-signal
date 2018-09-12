@@ -9,5 +9,6 @@ processQueryDescriptor: queryDescriptor
 			answer := self processUsageExpertise: queryDescriptor.
 		].
 	
-	"answer := self handleAnswer: queryDescriptor category."
+	answer ifNil: [ answer := self handleAnswer: queryDescriptor category. ].
+	
 	^ answer.

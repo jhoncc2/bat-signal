@@ -7,10 +7,28 @@ handleMessage: msg
 		self logQuestionMessage: msg.
 		
 		queryDescriptor := BTMessageProcessor instance processMessagePayload: msg.
-		response := BTAnswerProcessor instance processQueryDescriptor: queryDescriptor. 
 
-		bot message
+		[ 	response := BTAnswerProcessor instance processQueryDescriptor: queryDescriptor.
+			bot message message: 'I have found the next information'; respondTo: msg.
+			response do: [ :e | 
+				bot message
+					embedTitle: e key;
+					embedDescription: e value;
+					respondTo: msg. ]
+		] 
+			on: BTErrorBase 
+			do: [:e | response := 
+				bot message
+					embedDescription: e messageText;
+					respondTo: msg.]. 
+
+		"bot message
 				embedDescription: response;
 				embedColor: Color gray;
-				respondTo: msg. ]
+				respondTo: msg. ]"
+			
+		
+				
+		]
+			
 	

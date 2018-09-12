@@ -2,12 +2,17 @@ processing
 processImmediateExpertise: queryDescriptor
 	| res |
 	
-	res := (self fetchExpertiseFor: queryDescriptor) 
-				select: [:e | queryDescriptor category = e key ].
-				
+	res := (self fetchExpertiseFor: queryDescriptor).
+	queryDescriptor category = #exp_all 
+		ifFalse: [ 
+			res select: [:e | queryDescriptor category = e key ]. 
+		].
+					
 	res ifEmpty: [ ^ self handleFallback: queryDescriptor].
-	
-	^ 'I found this information ', (Character cr join: (res collect: [:e | e value key , 
+	^ res collect: #value.
+	"^ 'I have found the next information ', 
+			String cr , 
+			(Character cr join: (res collect: [:e | e value key , 
 															queryDescriptor codeElement , 
 															String cr , 
-															e value value])).
+															e value value]))."

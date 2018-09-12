@@ -19,12 +19,11 @@ handleFallback: queryDescriptor
 	] thenReject: [:e | e value isEmpty].
 
 	res ifEmpty: [ 
-		^ (self handleAnswer: #exp_empty) , queryDescriptor codeElement
+		BTEmptyException new messageText: 'No experts found for ' 
+				, queryDescriptor codeElement; signal.
+		"^ (self handleAnswer: #exp_empty) , queryDescriptor codeElement"
 	].
 
-	^ 'I have found this other information ' , String cr , String cr, (String cr 
-						join: (res collect: [ :e | 
-							e key, String cr ,
-							(self formatExpertiseList: e value) ]))
+	^ 'I have found this other information ' -> (res collect: #value)
 	
 	
