@@ -17,6 +17,9 @@ testSearchQuestion
 		
 	self assert: (inst searchQuestion: 'experts for Collection?') equals: #exp_all.
 	self assert: (inst searchQuestion: 'EXPERTS FOR COLLECTION?') equals: #exp_all.
+	
+	self assert: (inst searchQuestion: 'what do you do?') equals: #help.
+	self assert: (inst searchQuestion: '--help') equals: #help.
 		
 	"self assert: (inst searchQuestion: 'who are using a Java ?') equals: #usage_exp.
 	self assert: (inst searchQuestion: 'who used Java ?') equals: #usage_exp."

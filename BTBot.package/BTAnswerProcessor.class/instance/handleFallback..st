@@ -3,9 +3,14 @@ handleFallback: queryDescriptor
 	| pcode expertiseProv queries calls anws res |
 	pcode := self defineCodeNameType: queryDescriptor codeElement.
 	
-	queries := {#method -> { #hierarchy_method->{#yourself}. #exp_class->{#methodClass}. #exp_package->{#methodClass. #package} }.
-					#class -> { #hierarchy_class->{#yourself}. #exp_package->{#package}}. 
-					#package -> { #hierarchy_package->{#yourself}. }} asDictionary.
+	queries := {#method -> { #hierarchy_method->{#yourself}. 
+									#exp_class->{#methodClass}. 
+									#exp_package->{#methodClass. #package} }.
+					#class -> { #hierarchy_class->{#yourself}. 
+									#exp_class->{#yourself}. 
+									#exp_package->{#package}}. 
+					#package -> { #exp_package->{#yourself}. 
+									#hierarchy_package->{#yourself}. }} asDictionary.
 	
 	calls := self immediateExpertiseMethods asDictionary.
 	anws  := BTBotLanguageData answers asDictionary.
