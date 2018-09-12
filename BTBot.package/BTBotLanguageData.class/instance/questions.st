@@ -3,6 +3,7 @@ questions
 	^ { 
 		(#exp_all -> 'who is expert in ? ').
 		(#exp_all -> 'experts in ? ').
+		(#exp_all -> 'experts for ? ').
 		(#exp_all -> 'who knows about ').
 		(#exp_all -> 'who has worked with ').
 		(#exp_all -> 'who is working with ').
