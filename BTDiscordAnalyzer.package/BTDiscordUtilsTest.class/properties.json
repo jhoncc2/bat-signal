@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "BTDiscordAnalyzer-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTDiscordUtilsTest",
+	"type" : "normal"
+}

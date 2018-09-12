@@ -1,3 +1,3 @@
 accessing
 discordUsers
-	^ discordUsers ifNil: [ discordUsers := BTDiscord knownDSExpertise select: #isElegible]
+	^ discordUsers ifNil: [ discordUsers := BTContact knownExpertise select: #isElegible] 
