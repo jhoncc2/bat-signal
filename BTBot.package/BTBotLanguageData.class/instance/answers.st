@@ -11,4 +11,8 @@ answers
 		(#inf_package -> 'I do not have this information right now') .
 		(#inf_greeting -> 'Hi, I am ready for your questions') .
 		(#unknown_message -> 'I do not have this information right now') .
+		
+		#hierarchy_method ->  'experts overrode the method '.
+		#hierarchy_class ->  'experts created subclasses of '.
+		#hierarchy_package ->  'experts createds subclasses of classes in '.
 		}

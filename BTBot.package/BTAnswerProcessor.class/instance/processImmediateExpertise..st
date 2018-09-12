@@ -4,8 +4,8 @@ processImmediateExpertise: queryDescriptor
 	
 	res := (self fetchExpertiseFor: queryDescriptor).
 	queryDescriptor category = #exp_all 
-		ifFalse: [ 
-			res select: [:e | queryDescriptor category = e key ]. 
+		ifFalse: [
+			res := res select: [:e | queryDescriptor category = e key ]. 
 		].
 					
 	res ifEmpty: [ ^ self handleFallback: queryDescriptor].
