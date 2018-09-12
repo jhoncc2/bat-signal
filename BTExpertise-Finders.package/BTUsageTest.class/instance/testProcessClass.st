@@ -5,5 +5,7 @@ testProcessClass
 	self assertList: ((res collect: #key) collect: #username) containsSubList: #('jhoncc2').
 	
 	res := instance processClass: Collection.
-
-	self assertList: ((res collect: #key) collect: #username) containsSubList: #('Stepharo')
+	self assertList: ((res collect: #key) collect: #username) containsSubList: #('Stepharo').
+	
+	res := instance processClass: Boolean.
+	self assertList: ((res collect: #key) collect: #username) containsSubList: #('Stepharo' 'MarcusDenker')
