@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BTExpertise-Finders",
+	"classinstvars" : [
+		"instance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"discordUsers"
+	],
+	"name" : "BTExpertiseProviderBase",
+	"type" : "normal"
+}

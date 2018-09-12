@@ -12,7 +12,7 @@ processNewPackagesInImage
 	ms := (newPackages collect: #classes) flattened collect: #methods.
 	ms flattened do: [ :m |
 		self inmediateExpertise: m.
-		self usageExpertise: m.
+		"self usageExpertise: m."
 	].
 	
 	self saveExtendedData.	

@@ -1,0 +1,3 @@
+processing
+processPackage: aPackage
+	self subclassResponsibility

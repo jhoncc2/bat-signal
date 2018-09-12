@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BTErrorBase",
+	"category" : "BTBot-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BTEmptyException",
+	"type" : "normal"
+}

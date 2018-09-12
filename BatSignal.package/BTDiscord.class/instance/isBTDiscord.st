@@ -1,0 +1,3 @@
+accessing
+isBTDiscord
+	^ true

@@ -1,6 +1,7 @@
 export
 exportReachableExpertise
 	<script: 'self instance exportReachableExpertise'>
+	"this is the good one"
 	| expertIndexBlock data experts |
 
 	experts := discordExpertise select: #isLinked.

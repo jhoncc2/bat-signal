@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "BTAsserterAbstract",
+	"category" : "BTExpertise-Finders-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"instance"
+	],
+	"name" : "BTHierarchyTest",
+	"type" : "normal"
+}

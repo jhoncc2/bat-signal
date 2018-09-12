@@ -1,0 +1,3 @@
+processing
+processClass: aClass
+	self subclassResponsibility
