@@ -11,7 +11,7 @@ fetchExpertiseFor: queryDescriptor
 	
 	res := block 
 				collect: [ :e | |a|
-					a := (self handleAnswer: queryDescriptor category) ->
+					a := ((self handleAnswer: queryDescriptor category) , queryDescriptor codeElement)  ->
 								 				(self formatExpertiseList:  (e value value)).
 					e key -> a. ]
 				thenReject: [:e | e value value isEmpty].

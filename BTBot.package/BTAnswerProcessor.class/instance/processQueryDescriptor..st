@@ -9,6 +9,8 @@ processQueryDescriptor: queryDescriptor
 			answer := self processUsageExpertise: queryDescriptor.
 		].
 	
-	answer ifNil: [ answer := self handleAnswer: queryDescriptor category. ].
+	answer ifNil: [  
+		BTUnknowQuestion new messageText: (self handleAnswer: queryDescriptor category);
+				signal ].
 	
 	^ answer.

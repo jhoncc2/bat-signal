@@ -9,7 +9,8 @@ processImmediateExpertise: queryDescriptor
 		].
 					
 	res ifEmpty: [ ^ self handleFallback: queryDescriptor].
-	^ res collect: #value.
+
+	^ 'I have found the next information ' -> (res collect: #value).
 	"^ 'I have found the next information ', 
 			String cr , 
 			(Character cr join: (res collect: [:e | e value key , 

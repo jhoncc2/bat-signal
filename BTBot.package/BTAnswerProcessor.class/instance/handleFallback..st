@@ -24,6 +24,7 @@ handleFallback: queryDescriptor
 		"^ (self handleAnswer: #exp_empty) , queryDescriptor codeElement"
 	].
 
-	^ 'I have found this other information ' -> (res collect: #value)
+	^ 'I have found this other information ' 
+				-> (res collect: [:e | e key -> (self formatExpertiseList: e value) ])
 	
 	
