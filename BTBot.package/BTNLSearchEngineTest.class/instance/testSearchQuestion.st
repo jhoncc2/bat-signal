@@ -10,7 +10,9 @@ testSearchQuestion
 		equals: #exp_class.
 	self assert: (inst searchQuestion: 'Who is expert in method Roassal?') 
 		equals: #exp_method.
-	self assert: (inst searchQuestion: 'information about  Roassal?') 
+	self assert: (inst searchQuestion: 'information about Roassal?') 
 		equals: #inf_package.
 	self assert: (inst searchQuestion: 'information Roassal?') 
 		equals: #inf_package.
+		
+	self assert: (inst searchQuestion: 'who has used a Java ?') equals: #usage_exp.

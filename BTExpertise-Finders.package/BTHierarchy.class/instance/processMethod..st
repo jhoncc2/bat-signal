@@ -6,7 +6,7 @@ processMethod: aCompiledMethod
 	| hirarchyMethods |
 	hirarchyMethods := aCompiledMethod implementors 
 		select: [ :m | m methodClass allSuperclasses anySatisfy: [ :e | e = aCompiledMethod methodClass] ].
-		
+
 	hirarchyMethods :=  hirarchyMethods 
 								collect:  [ :e | self findDiscordUser: e author ]
 								thenReject: #isNil.
