@@ -1,5 +1,5 @@
 accessing
 stopBotService
+	BTQueryBot instance disconnect.
 	shouldStop := true.
-	"or"
 	process terminate.

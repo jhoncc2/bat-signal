@@ -15,5 +15,5 @@ answers
 		
 		#hierarchy_method ->  'experts overrode the method '.
 		#hierarchy_class ->  'experts created subclasses of '.
-		#hierarchy_package ->  'experts createds subclasses of classes in '.
+		#hierarchy_package ->  'experts created subclasses of classes in package '.
 		}

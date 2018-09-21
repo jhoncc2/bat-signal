@@ -1,9 +1,15 @@
 starting
 handleMessage: msg
 	| response queryDescriptor |
-	"(self isChannelOmmited: msg channelId) ifTrue: [ ^ self yourself ]."
+
+	self isBotRestricted ifTrue: [
+		(self isListeningChannel: msg channelId) ifFalse: [ ^ self yourself ].
+		 ].
 		
-	(msg author isNil or: [(msg author isBot) or:[msg content isNil or: [msg content isEmpty]]]) ifFalse: [ 
+	(msg author isNil 
+		or: [(msg author isBot) 
+			or:[msg content isNil 
+				or: [msg content isEmpty]]]) ifFalse: [ 
 		
 		"save questions made before"
 		self logQuestionMessage: msg.

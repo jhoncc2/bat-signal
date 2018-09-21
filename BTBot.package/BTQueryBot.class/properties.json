@@ -15,8 +15,7 @@
 		"shouldStop",
 		"process",
 		"listenList",
-		"serverTarget",
-		"omitedChannelIds"
+		"serverTarget"
 	],
 	"name" : "BTQueryBot",
 	"type" : "normal"

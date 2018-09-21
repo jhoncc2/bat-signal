@@ -5,8 +5,11 @@ startChatBot2
 	bot token: self token.
 	bot connect.
 
-	"self serverTarget: 'BatSingal-test'.
-	self channelsToOmit: {}."
+	self serverTarget: 'BatSignal-test'.
+"	self channelsToOmit: {}."
+	self channelsToListen: {'bot-test-channel'}.
+	"self channelsToListen:{}."
+	
 	bot announcer 
 		when: DSGatewayMessageAnnouncement
 		do: [ :ann |

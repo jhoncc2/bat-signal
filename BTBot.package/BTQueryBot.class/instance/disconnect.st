@@ -1,6 +1,6 @@
 actions
 disconnect
-	<script: 'BTQueryBot new disconnect'>
+	<script: 'BTQueryBot instance disconnect'>
 	"bot disconnect."
 	BTQueryBot allInstances
 		do: [ :ann | 
