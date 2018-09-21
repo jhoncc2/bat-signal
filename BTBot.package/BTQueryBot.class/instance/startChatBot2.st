@@ -6,8 +6,8 @@ startChatBot2
 	bot connect.
 
 	self serverTarget: 'BatSignal-test'.
-"	self channelsToOmit: {}."
-	self channelsToListen: {'bot-test-channel'}.
+	self channelsToOmit: {'general'}.
+	"self channelsToListen: {'bot-test-channel'}."
 	"self channelsToListen:{}."
 	
 	bot announcer 

@@ -1,3 +1,3 @@
 starting
 isBotRestricted
-	^ listenList isNotNil and: [ listenList isNotEmpty ]
+	^ omitedChannelIds isNotNil and: [ listenList isNotEmpty ]
