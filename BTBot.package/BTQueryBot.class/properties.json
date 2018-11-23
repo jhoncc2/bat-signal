@@ -4,8 +4,8 @@
 	"category" : "BTBot",
 	"classinstvars" : [
 		"instance",
-		"shouldStop",
-		"process"
+		"process",
+		"shouldStop"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -16,7 +16,8 @@
 		"process",
 		"listenList",
 		"serverTarget",
-		"omitedChannelIds"
+		"omitedChannelIds",
+		"token"
 	],
 	"name" : "BTQueryBot",
 	"type" : "normal"

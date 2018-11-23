@@ -1,3 +1,3 @@
 accessing
 timeToSleep
-	^ 15 minutes
+	^ 60 minutes
