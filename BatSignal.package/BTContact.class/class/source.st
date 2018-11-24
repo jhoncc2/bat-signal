@@ -1,3 +1,0 @@
-data
-source
-	self subclassResponsibility

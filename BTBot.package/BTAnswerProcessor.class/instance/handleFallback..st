@@ -3,6 +3,7 @@ handleFallback: queryDescriptor
 	| pcode expertiseProv queries calls anws res |
 	pcode := self defineCodeNameType: queryDescriptor codeElement.
 	
+	"configuration of fallback"
 	queries := {#method -> { #hierarchy_method->{#yourself}. 
 									#exp_class->{#methodClass}. 
 									#exp_package->{#methodClass. #package} }.
@@ -15,9 +16,10 @@ handleFallback: queryDescriptor
 	calls := self immediateExpertiseMethods asDictionary.
 	anws  := BTBotLanguageData answers asDictionary.
 	expertiseProv := BTExpertiseProvider instance.
+	"select which fallback techniques works for the specific pcode {class,method or package}"
 	res := (queries at: pcode key) collect: [ :e |
 		| t r obj |
-		obj := {pcode value},e value reduce: [:a :b | a perform: b].
+		obj := {pcode value} , e value reduce: [:a :b | a perform: b].
 		t := (anws at: e key) , obj name.
 		r := (calls at: e key) value: expertiseProv value: obj.
 		t ->  r

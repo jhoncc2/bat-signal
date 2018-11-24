@@ -1,7 +1,6 @@
 menu
 menuFor: aBuilder
 	|model target |
-	self halt.
 	(model := aBuilder model) ifNil: [ ^ self ].
 	(target := model selectedMethod) ifNotNil: [ self buildSubmenu: aBuilder method: target. ^ self  ].
 	(target := model selectedClass) ifNotNil: [ self buildSubmenu: aBuilder class: target. ^ self ].

@@ -1,4 +1,0 @@
-test
-hasContacts 
-	^ discordContact isNotNil
-

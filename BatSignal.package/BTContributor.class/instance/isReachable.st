@@ -1,4 +1,0 @@
-test
-isReachable 
-	^ discordContact isNotNil
-
