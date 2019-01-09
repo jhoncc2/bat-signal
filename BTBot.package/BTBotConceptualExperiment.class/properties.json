@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BTBotLanguageData",
-	"category" : "BTBot-PublicExp",
+	"super" : "BTQueryBot",
+	"category" : "BTBot-ConceptExperiment",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BTBotDataPExperiment",
+	"name" : "BTBotConceptualExperiment",
 	"type" : "normal"
 }

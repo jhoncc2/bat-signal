@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BTQueryBot",
-	"category" : "BTBot-PublicExp",
+	"super" : "BTMessageProcessor",
+	"category" : "BTBot-ConceptExperiment",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BTPublicBotExperiment",
+	"name" : "BTCEMessageProcessor",
 	"type" : "normal"
 }

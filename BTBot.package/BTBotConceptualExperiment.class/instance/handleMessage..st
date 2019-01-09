@@ -17,10 +17,10 @@ handleMessage: msg
 		"save questions made before"
 		"self logQuestionMessage: msg."
 
-		queryDescriptor := BTMessageProcessor instance processMessagePayload: msg.
+		queryDescriptor := BTCEMessageProcessor instance processMessagePayload: msg.
 		[
 		
-			response := BTAnswerPExperiment instance processQueryDescriptor: queryDescriptor.
+			response := BTCEAnswerProcessor instance processQueryDescriptor: queryDescriptor.
 			"answer header"
 			bot message message: response key; respondTo: msg.
 			

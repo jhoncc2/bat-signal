@@ -14,7 +14,7 @@ handleFallback: queryDescriptor
 									#hierarchy_package->{#yourself}. }} asDictionary.
 	
 	calls := self immediateExpertiseMethods asDictionary.
-	anws  := BTBotDataPExperiment answers asDictionary.
+	anws  := BTCELanguageData answers asDictionary.
 	expertiseProv := BTExpertiseProvider instance.
 	"select which fallback techniques works for the specific pcode {class,method or package}"
 	res := (queries at: pcode key) collect: [ :e |

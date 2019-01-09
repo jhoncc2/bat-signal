@@ -1,5 +1,5 @@
 processing
 handleAnswer: category
 	| answers |
-	answers := BTBotDataPExperiment answers asDictionary.
+	answers := BTCELanguageData answers asDictionary.
 	^ answers at: category

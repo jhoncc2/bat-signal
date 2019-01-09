@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BTAnswerProcessor",
-	"category" : "BTBot-PublicExp",
+	"category" : "BTBot-ConceptExperiment",
 	"classinstvars" : [
 		"inst"
 	],
@@ -10,6 +10,6 @@
 	"instvars" : [
 		"data"
 	],
-	"name" : "BTAnswerPExperiment",
+	"name" : "BTCEAnswerProcessor",
 	"type" : "normal"
 }

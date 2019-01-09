@@ -3,8 +3,8 @@ startBotService
 	|inst|
 	inst := self instance.
 	  
-	inst token: 'token_here'.
-	inst serverTarget: 'Ups-Testing'.
+	inst token: 'NDg5MzUwNzI5MzU0NTc1ODcy.DxgOdg.RBEMP31nqXXNO4chU1f60T4C7rc'.
+	inst serverTarget: 'test_server'.
 	"inst channelsToListen: {'test-bot'}."
 	inst channelsToOmit: {'general'}.
 
