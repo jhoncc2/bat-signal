@@ -4,6 +4,9 @@ questions
 		(#exp_all -> 'who is expert in ? ').
 		(#exp_all -> 'experts in ? ').
 		(#exp_all -> 'experts for ? ').
+		(#exp_all -> 'notable person for ? ').
+		(#exp_all -> 'remarkable people for ? ').
+		(#exp_all -> 'relevant people person for ? ').
 		(#exp_all -> 'who knows about ').
 		(#exp_all -> 'who has worked with ').
 		(#exp_all -> 'who is working with ').
@@ -18,6 +21,7 @@ questions
 		(#exp_package -> 'who has have is expert experience experts for in  package ?') .
 		(#inf_package -> 'What is the information about this package ?') .
 		(#inf_greeting -> 'How are you? hi hello bounjour sup, whats up') .
+		(#inf_greeting -> 'stupid') .
 		(#help -> 'what do you do your porpuse') .
 		(#help -> '--help').
 		(#unknown_message -> 'for an unknown message') .

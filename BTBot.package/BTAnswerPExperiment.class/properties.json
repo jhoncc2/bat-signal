@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "BTAnswerProcessor",
+	"category" : "BTBot-PublicExp",
+	"classinstvars" : [
+		"inst"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"data"
+	],
+	"name" : "BTAnswerPExperiment",
+	"type" : "normal"
+}

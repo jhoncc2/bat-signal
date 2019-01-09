@@ -1,0 +1,3 @@
+processing
+clearData
+	data removeAll
