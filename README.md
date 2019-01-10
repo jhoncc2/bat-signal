@@ -1,6 +1,9 @@
 # BatSignal
 This tool is created aiming to help new developers get into the community of Pharo, to help him contact with experts in the area, and so to shorten the time they spend looking for information. The users might find more reliable, updated and useful answers from experts.
 
+## Conceptual Expert recommendation bot
+This bot run in a Test server in Discord. For testing purpose the bot is recommends scientific experts; where the data was collected from Wikipedia (https://en.wikipedia.org/wiki/List_of_people_considered_father_or_mother_of_a_scientific_field). You can test the bot by joining to the test server (https://discord.gg/f865cgx).
+
 ## Installation
 Run the script below in the workspace of Pharo (tested on Pharo 6.1, Pharo 7 comming soon)
 
