@@ -1,5 +1,6 @@
 as yet unclassified
 findExperts: queryDescriptor
+	<deprecated>
 	| codeElem expertiseProv list |
 	codeElem := queryDescriptor codeElement.
 

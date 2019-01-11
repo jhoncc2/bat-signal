@@ -7,4 +7,4 @@ expertsForMethodName: aCompiledMethod
 		^ { }
 	].
 	expertiseSource := 'method'.
-	^ ((methods at: aCompiledMethod) associations collect: [ :i | experts at: i key ]) asSet
+	^ self filter: ((methods at: aCompiledMethod) associations collect: [ :i | experts at: i key ]) asSet

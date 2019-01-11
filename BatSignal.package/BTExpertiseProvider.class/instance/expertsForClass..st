@@ -12,4 +12,4 @@ expertsForClass: aClass
 
 	expertiseSource := 'class'.
 
-	^ ((classes at: aClass name) associations collect: [ :i | experts at: i key ]) asSet
+	^ self filter: ((classes at: aClass name) associations collect: [ :i | experts at: i key ]) asSet

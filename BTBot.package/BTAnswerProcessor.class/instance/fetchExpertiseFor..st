@@ -1,6 +1,7 @@
 processing
 fetchExpertiseFor: queryDescriptor
 	| expertiseProv block res |
+
 	expertiseProv := BTExpertiseProvider instance.
 	block := {
 		#exp_method ->  [expertiseProv expertsForMethodName: queryDescriptor codeElement].

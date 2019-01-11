@@ -13,4 +13,4 @@ expertsForClassName: aClass
 	expertiseSource := 'class'.
 	(classes includesKey: aClass ) ifFalse: [ ^ {} ].
 
-	^ ((classes at: aClass) associations collect: [ :i | experts at: i key ]) asSet
+	^ self filter: ((classes at: aClass) associations collect: [ :i | experts at: i key ]) asSet
