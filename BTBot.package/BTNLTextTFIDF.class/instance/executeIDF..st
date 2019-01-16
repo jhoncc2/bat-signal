@@ -7,7 +7,7 @@ executeIDF: arrayTerms
 	sa := arrayTerms collect: [ :e | ' ' split: e trim ]. 
 	sa := sa collect: [ :e | (self cleanSentenceWords: e) collect: #asLowercase ].
 	
-	"execute tf"
+	"execute tf (as brute frequency)"
 	sa do: [ :s | 
 		s do: [ :sw |
 			(frequency includesKey: sw)
