@@ -22,5 +22,11 @@ answers
 		
 		"Unrelated-expertise interaction"
 		(#msg_bot_inf -> 'I provide Pharo experts for a given code artifact (the name of a: method, class or package)').
+		"fallback/contingency"
+		#unknown_reference ->  'experts created subclasses of classes in package '.
+		#msg_fallback_found ->  'I have found this other information '.
+		
+		"error"
+		#msg_no_experts_found ->  'I have found this other information '.
 
 		}

@@ -1,5 +1,6 @@
 processing
 fetchImmediateExpertiseFor: queryDescriptor
+	<deprecated>
 	| expertiseProv block res |
 	expertiseProv := BTExpertiseProvider instance.
 	block := self immediateExpertiseMethods.

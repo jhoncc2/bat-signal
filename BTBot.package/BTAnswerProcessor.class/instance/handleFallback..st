@@ -35,7 +35,7 @@ handleFallback: queryDescriptor
 		BTUnknowQuestion new messageText: (self handleAnswer: #unknown_message); signal 
 		].
 
-	^ 'I have found this other information ' 
+	^ (self handleAnswer: #msg_fallback_found) 
 				-> (res collect: [:e | e key -> (self formatExpertiseList: e value) ])
 	
 	
